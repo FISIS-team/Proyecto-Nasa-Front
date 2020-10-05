@@ -7,8 +7,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
 import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
@@ -68,7 +69,8 @@ return(
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  <Button variant="outlined" color="primary" component={Link} to="./album">
+        
                     Explore
                   </Button>
                 </Grid>
